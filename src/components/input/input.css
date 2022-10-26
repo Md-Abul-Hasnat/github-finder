@@ -1,0 +1,76 @@
+.input-element {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.input {
+  width: 50%;
+  border: none;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: var(--text-clr);
+  border: 1px solid rgb(26, 25, 25);
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.btn {
+  padding: 10px 35px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0 7px 7px 0px;
+  background-color: var(--header-bg);
+  color: var(--text-clr);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: rgb(13, 13, 13);
+}
+
+.clear {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .input {
+    width: 80%;
+  }
+  .btn {
+    padding: 8px 25px;
+    font-size: 1rem;
+  }
+  .clear {
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .input {
+    width: 90vw;
+  }
+  .btn {
+    padding: 8px 25px;
+    font-size: 1rem;
+  }
+  .clear {
+    border-radius: 10px;
+  }
+  .input-element {
+    gap: 10px;
+  }
+}

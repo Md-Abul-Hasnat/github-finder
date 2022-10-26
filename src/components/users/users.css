@@ -1,0 +1,49 @@
+.user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: safe;
+  gap: 20px;
+  padding: 12px 15px;
+  box-shadow: 3px 3px 5px rgb(36, 35, 35);
+  border-radius: 7px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.user:hover {
+  transform: translateY(-6px);
+}
+
+.image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.name h3 {
+  color: var(--text-clr);
+}
+
+.name p {
+  color: rgb(108, 106, 106);
+  font-size: 0.9rem;
+  transition: 0.4s;
+}
+
+.user:hover .name p {
+  color: rgb(124, 186, 206);
+}
+
+@media screen and (max-width: 950px) {
+  .user {
+    gap: 10px;
+    padding: 10px;
+  }
+}

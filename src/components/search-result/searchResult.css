@@ -1,0 +1,27 @@
+.search-result-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  gap: 2%;
+}
+
+@media screen and (max-width: 1200px) {
+  .search-result-section {
+    grid-template-columns: repeat(3, 31%);
+    gap: 2.5%;
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .search-result-section {
+    grid-template-columns: 48% 48%;
+    gap: 2.5%;
+    row-gap: 20px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .search-result-section {
+    grid-template-columns: 100%;
+    row-gap: 20px;
+  }
+}
