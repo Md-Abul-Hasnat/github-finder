@@ -12,3 +12,7 @@
   font-size: 0.8rem;
   color: var(--text-clr);
 }
+.logo-icon {
+  color: red;
+  margin: 0 2px;
+}
