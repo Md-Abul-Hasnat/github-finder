@@ -38,7 +38,7 @@
 }
 
 .user:hover .name p {
-  color: rgb(124, 186, 206);
+  color: rgb(176, 174, 174);
 }
 
 @media screen and (max-width: 950px) {
