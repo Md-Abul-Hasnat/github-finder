@@ -10,7 +10,7 @@ const SearchResult = () => {
   return (
     <>
       {loading ? (
-        <Loader />
+        <Loader height={35} />
       ) : (
         <section className="search-result-section">
           {users?.map((user) => (

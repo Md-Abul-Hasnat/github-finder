@@ -43,10 +43,6 @@
   transition: 0.3s;
 }
 
-.nav-links li a:hover {
-  color: lightblue;
-}
-
 @media screen and (max-width: 500px) {
   .header-wrapper {
     width: 90%;
@@ -56,16 +52,15 @@
   }
 }
 @media screen and (max-width: 380px) {
-  .header-wrapper {
-    width: 93%;
-  }
-
   .logo .logo-icon {
     width: 30px;
     height: 30px;
   }
   .nav-links {
     display: flex;
-    gap: 15px;
+    gap: 18px;
+  }
+  .nav-links li a {
+    font-size: 0.9rem;
   }
 }

@@ -49,7 +49,7 @@ const SingleUserDetails = () => {
   return (
     <>
       {loading ? (
-        <Loader />
+        <Loader height={82} />
       ) : (
         <section className="user-details">
           <div className="user-details-wrapper">
@@ -107,7 +107,7 @@ const SingleUserDetails = () => {
                         rel="noreferrer"
                         target="_blank"
                       >
-                        {blog}
+                        {twitter_username}
                       </a>
                     ) : (
                       <h3>Not Found</h3>
