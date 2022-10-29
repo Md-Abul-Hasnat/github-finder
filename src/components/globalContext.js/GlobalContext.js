@@ -23,12 +23,12 @@ const GlobalContext = ({ children }) => {
     <MainContext.Provider
       value={{
         setUsers,
-        users,
-        loading,
         setLoading,
-        error,
         fetchUsers,
         setUser,
+        users,
+        loading,
+        error,
         user,
       }}
     >
