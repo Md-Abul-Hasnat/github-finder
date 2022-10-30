@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import "./searchResult.css";
 import Users from "../users/Users";
-import { MainContext } from "../globalContext.js/GlobalContext";
+import { MainContext } from "../globalContext/GlobalContext";
 import Loader from "../loader/Loader";
 
 const SearchResult = () => {
-  const { users, loading, error } = useContext(MainContext);
+  const { users, loading } = useContext(MainContext);
 
   return (
     <>

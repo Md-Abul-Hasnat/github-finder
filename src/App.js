@@ -1,7 +1,7 @@
 import Header from "./components/header/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
-import GlobalContext from "./components/globalContext.js/GlobalContext";
+import GlobalContext from "./components/globalContext/GlobalContext";
 import Footer from "./components/footer/Footer";
 import About from "./pages/about/About";
 import SingleUserInfo from "./pages/single-user/SingleUserInfo";

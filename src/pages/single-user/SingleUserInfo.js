@@ -1,28 +1,19 @@
 import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { MainContext } from "../../components/globalContext.js/GlobalContext";
+import { MainContext } from "../../components/globalContext/GlobalContext";
 import SingleUserDetails from "../../components/singleUserDetails/SingleUserDetails";
+import Loader from "../../components/loader/Loader";
 
 const SingleUserInfo = () => {
   const { id } = useParams();
 
-  const { setUser, setLoading } = useContext(MainContext);
+  const { fetchSingleUser, user } = useContext(MainContext);
 
   useEffect(() => {
-    setLoading(true);
-    fetch(`https://api.github.com/users/${id}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setUser(data);
-        setLoading(false);
-      });
+    fetchSingleUser(id);
   }, []);
 
-  return (
-    <>
-      <SingleUserDetails />
-    </>
-  );
+  return <>{user.repos_url ? <SingleUserDetails /> : <Loader height={82} />}</>;
 };
 
 export default SingleUserInfo;

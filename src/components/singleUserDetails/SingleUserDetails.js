@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { MainContext } from "../globalContext.js/GlobalContext";
+import { MainContext } from "../globalContext/GlobalContext";
 import Loader from "../loader/Loader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -1,9 +1,9 @@
 import React, { useContext, useState } from "react";
-import { MainContext } from "../globalContext.js/GlobalContext";
+import { MainContext } from "../globalContext/GlobalContext";
 import "./input.css";
 
 const Input = () => {
-  const { setUsers, users, fetchUsers } = useContext(MainContext);
+  const { clearUsers, users, fetchUsers } = useContext(MainContext);
   const [text, setText] = useState("");
   const [warning, setwarning] = useState("");
 
@@ -24,10 +24,6 @@ const Input = () => {
     }
 
     setText("");
-  }
-
-  function clearUsers() {
-    setUsers([]);
   }
 
   return (
